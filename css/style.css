@@ -1,0 +1,182 @@
+/* Fonts */
+body {font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Roboto', sans-serif;}
+
+
+h1 {font-size: 55px;
+	font-weight: 500;
+	}
+
+h2 {font-size: 45px;
+	}
+
+h3 {font-size: 35px;
+}
+
+h4 {font-size: 25px;
+	}
+
+p {font-family: 'Noto Sans JP';
+	font-size: 18px;
+}
+
+/* logo */
+
+.smlogo {height: 60px;}
+
+
+/* flex*/
+
+
+body {
+  margin: 0;
+}
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.heroImg {
+  background-color: #888786;
+  padding: 5px 15px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+	width: 200px;
+}
+
+
+/* My Skills*/
+
+.flexcontainer {
+	display: flex;
+}
+
+.skillsDiv {
+	width: 30%;
+	padding:10px;
+  	margin: 20px;
+  	background-color: lightgrey;
+	color: #646464;}
+
+.mySkills {
+	align-items: center;
+}
+
+/* My Work */
+ 
+#workGrid {
+	margin: 0px 5%;
+	display: grid;
+	grid-template-rows: 300px 150px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"casa Adventure doi"
+		"casa Adventure doi"
+}
+
+#casa {
+	grid-area: casa;
+  	background-image: url(..//images/CASA%20Web%20Home.png);
+  	background-repeat: no-repeat;
+  	background-size: contain;
+	
+}
+
+#doi {
+	grid-area: doi;
+	background-image: url(..//images/DOI_Web_Wire_Home_Page.png);
+  	background-repeat: no-repeat;
+  	background-size: contain;
+ 
+}
+
+#Adventure {
+	grid-area: Adventure;
+	background-image: url(..//images/Adventure.png);
+  	background-repeat: no-repeat;
+  	background-size: contain;
+
+}
+
+.categoryGridArea {
+	background-color: #646464;
+	margin: 5px;
+	display: grid;
+	align-content: end;
+	color: white;
+	padding: 5px;
+	text-align: center;
+}
+
+
+.subHeading {
+		text-align: center;
+	}
+
+
+<!-- Footer -->
+
+footer {
+
+}
+footer ul {
+	color: white;
+	background-color: #373738;
+	text-align: center;
+	padding: 15px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+	.flexcontainer {
+	flex-direction: column;
+	width: 100%;
+}
+	.skillsDiv {
+	width: 90%;}
+	
+#workGrid {
+	margin: 0px 5%;
+	grid-template-rows: 1fr;
+	grid-template-columns: 300px 300px 300px 300px 300px 300px;
+	grid-template-areas:
+		"casa"
+		"casa"
+		"Adventure"
+		"Adventure"
+		"doi"
+		"doi";
+}
+}
+
+
+
+
+
